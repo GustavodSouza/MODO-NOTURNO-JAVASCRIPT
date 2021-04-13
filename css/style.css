@@ -1,0 +1,67 @@
+.section-bem-vindo {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bem-vindo {
+  font-size: 40px;
+}
+
+img {
+  margin-left: 10px;
+}
+
+/* classe escura para divs */
+.div-modo-noite {
+  transition: 0.5s all;
+  background-color: black !important;
+  color: #fff !important;
+}
+
+/* classe clara para divs */
+.div-modo-dia {
+  transition: 0.5s all;
+  background-color: #fff;
+}
+
+/* classe que monta o estilo principal do botao */
+.btn-modo-noturno {
+  border: 1px solid gray;
+  border-radius: 20px;
+  height: 30px;
+  width: 200px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: -2px 10px 11px 0px rgba(0,0,0,0.75);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* classe adicional usada junto com a principal, aplicada ao botao no modo escuro */
+.btn-modo-noturno-desativado {
+  background-color: black;
+  color: #fff;
+  border: 1px solid black;
+  transition: 0.5 all;
+}
+
+/* classe adicional usada junto com a principal, aplicada ao botao no modo claro */
+.btn-modo-noturno-ativado {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid gray;
+  transition: 0.5 all;
+}
+
+/* Quando o botao é clicado, realiza o efeito 3D */
+.btn-modo-noturno:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+}
